@@ -1,0 +1,105 @@
+<meta charset="UTF-8">
+<!Doctype html>
+<body>
+<font size="36">
+<title>puskárafel.hu</title>
+<p align="center" id="szoveg2"></p>
+<hr>
+<p align="center"> Nyomd meg azt a gombot, amelyikre szükséged van! </p>
+<hr>
+<p align="justify"> Sajnálom, hogy egyes testek, síkidomok valamijét nem programoztam be!
+Csak az a baj, hogy a nyelv, amin programozok nem tudja kiszámolni normálisan.</p>
+<hr>
+<p id="szoveg"></p>
+<button onclick="körK()"> Kör kerület </button>, <button onclick="négyzetT()"> Négyzet terület </button>
+<br>
+<button onclick="körT()"> Kör terület </button>, <button onclick="kockaA()"> Kocka felszín </button>
+<br>
+<button onclick="gömbA()"> Gömb felszín </button>, <button onclick="kockaV()"> Kocka térfogat </button>
+<br>
+<button onclick="gömbV()"> Gömb térfogat </button>, <button onclick="téglaV()"> Téglatest térfogat </button>
+<br>
+<button onclick="hengerV()"> Henger térfogat </button>, <button onclick="gúlaV()"> Gúla térfogat </button>
+<br>
+<button onclick="kúpV()"> Kúp térfogat </button>, <button onclick="háromhasábV()"> Háromszög alapú hasáb térfogat </button>
+<br>
+<button onclick="háromszögT()"> Háromszög terület </button>, <button onclick="paralT()"> Paralelogramma terület </button>
+<br>
+<button onclick="téglaT()"> Téglalap terület </button>, <button onclick="tovább()"> Tovább </button>
+</body>
+<script>
+   function körK() {
+       document.getElementById("szoveg").innerHTML = "Köszönöm a megértését!"
+    var r = prompt("Kör sugár")
+	  alert(2*r*3.14)
+	}
+	function körT() {
+	    var r = prompt("Kör sugár")
+		   alert(r**2*3.14)
+	}
+	function gömbA() {
+	    var r = prompt("Gömb sugár")
+		   alert(4*r**2*3.14)
+	}
+	function gömbV() {
+	    var r = prompt("Gömb sugár")
+		    alert(4*r**3*3.14/3)
+	}
+	function hengerV() {
+	     var r = prompt("Sugár")
+		 var m = prompt("Magasság")
+		    alert(r**2*3.14*m)
+	}
+	function kúpV() {
+	     var r = prompt("Sugár")
+		 var m = prompt("Magasság")
+		    alert(r**2*3.14*m/3)
+	}
+	function háromszögT() {
+	     var a = prompt("A oldal hosszúság")
+		 var m = prompt("Magasság")
+		    alert(a*m/2)
+	}
+	function téglaT() {
+	     var a = prompt("A oldal hosszúság")
+		 var b = prompt("B oldal hosszúság")
+		     alert(a*b)
+	}
+	function négyzetT() {
+	     var a = prompt("A oldal hosszúság")
+		     alert(a**2)
+	}
+	function kockaA() {
+	     var a = prompt("A él hosszúság")
+		     alert(a**2*6)
+	}
+	function kockaV() {
+	     var a = prompt("A él hosszúság")
+		     alert(a**3)
+	}
+	function téglaV() {
+	     var a = prompt("A él hosszúság")
+		 var b = prompt("B él hosszúság")
+		 var c = prompt("C él hosszúság")
+		     alert(a*b*c)
+	}
+	function gúlaV() {
+	     var T = prompt("Alapterület")
+		 var m = prompt("Magasság")
+		     alert(T*m/3)
+	}
+	function háromhasábV() {
+	     var T = prompt("Alapterület")
+		 var m = prompt("Magasság")
+		     alert(T*m)
+	}
+	function paralT() {
+	     var a = prompt("A oldal hosszúság")
+		 var m = prompt("Magasság")
+		     alert(a*m)
+	}
+	function tovább() {
+	    document.getElementById("szoveg2").innerHTML = "alvinsimonteo10@gmail.com"
+	   alert("Ha van egy ötleted, hogy mit programozhatnék, csak küldj egy e-mailt az oldal tetején lévõ e-mail címre.")
+	}
+</script>
